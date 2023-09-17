@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css" />
+    <title>Formulario de Encuesta</title>
+    </head>
+<body>
+    <form id="survey-form">
+        <h1 id="title">Formulario de Encuesta</h1>
+        <p id="description">Por favor, completa la siguiente encuesta:</p>
+
+        <label for="name" id="name-label">Nombre:</label>
+        <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+
+        <label for="email" id="email-label">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+
+        <label for="number" id="number-label">Número Favorito:</label>
+        <input type="number" id="number" name="number" placeholder="Ingresa tu número favorito" min="1" max="100" required>
+
+        <label for="dropdown">Selecciona una opción:</label>
+        <select id="dropdown" name="dropdown">
+            <option value="opcion1">Opción 1</option>
+            <option value="opcion2">Opción 2</option>
+            <option value="opcion3">Opción 3</option>
+        </select>
+
+        <label>Preguntas de opción múltiple:</label>
+        <div>
+            <label>
+                <input type="radio" name="opcionMultiple" value="opcionA"> Opción A
+            </label>
+            <label>
+                <input type="radio" name="opcionMultiple" value="opcionB"> Opción B
+            </label>
+        </div>
+
+        <label>Preguntas de casilla de verificación:</label>
+        <div>
+            <label>
+                <input type="checkbox" name="casillaVerificacion1" value="si"> Sí
+            </label>
+            <label>
+                <input type="checkbox" name="casillaVerificacion2" value="no"> No
+            </label>
+        </div>
+
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" name="comentarios" rows="4" placeholder="Déjanos tus comentarios"></textarea>
+
+        <input type="submit" id="submit" value="Enviar">
+    </form>
+</body>
+</html>
